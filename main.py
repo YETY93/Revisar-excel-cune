@@ -30,7 +30,7 @@ def consultaEsatado(cune):
     PATH_DIAN = 'https://catalogo-vpfe.dian.gov.co/Document/ShowDocumentToPublic/'
 
     while (cune != None):
-        requestsDIAN = requests.get(PATH_DIAN + cune, timeout=5)
+        requestsDIAN = requests.get(PATH_DIAN + cune, timeout=30)
 
         if (requestsDIAN.status_code == 200):
             estadoHTTP = "REPORTADA_DIAN"

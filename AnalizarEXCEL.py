@@ -3,7 +3,8 @@ from subprocess import check_output
 from unittest import result
 
 
-ejecutarVirtualEnv = "venv\\Scripts\\activate.bat &&"
+nombreEntorno = "venv-nomina"
+ejecutarVirtualEnv = nombreEntorno + "\\Scripts\\activate.bat &&"
 ejecutarPython = "python main.py"
 
 comandos = ejecutarVirtualEnv + ejecutarPython
